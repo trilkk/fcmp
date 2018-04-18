@@ -14,6 +14,8 @@ output_flags("DEBUG" on)
 
 include_directories("${PROJECT_SOURCE_DIR}/src")
 
+add_definitions(-DVERSION="r1")
+
 add_executable(fcmp
   "src/arithmetic_coder.hpp"
   "src/arithmetic_decoder.cpp"
